@@ -1,4 +1,4 @@
-# React Animated Cards – Project Documentation
+# React Animated Cards 
 
 ## Overview
 
