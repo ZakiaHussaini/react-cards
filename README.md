@@ -1,12 +1,104 @@
-# React + Vite
+# React Animated Cards – Project Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is an animated React UI featuring:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* A responsive hero section
+* A dynamic grid of 6 cards with animation
+* Light/dark theme toggle
+* RTL (Right-to-Left) layout toggle
+* Smooth entrance animations using Framer Motion
 
-## Expanding the ESLint configuration
+![Home View Light Mode](src/assets/pic1.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Card.js
+│   ├── CardGrid.js
+│   ├── Header.js
+│   └── HeroSection.js
+├── App.js
+├── index.js
+```
+
+---
+
+## Features
+
+### 1. Hero Section
+
+* Displays the main title and subtitle.
+* Features a gradient text effect for emphasis.
+* Includes a call-to-action button.
+
+![Hero Section](src/assets/pic2.png)
+
+### 2. Cards Grid
+
+* 6 animated cards fetched from a placeholder image API.
+* Each card contains an image, title, description, price, and a CTA button.
+* Interactive heart icon to favorite/unfavorite cards.
+* Responsive layout using Tailwind CSS.
+
+![Cards Grid](src/assets/pic3.png)
+
+### 3. Theme Toggle
+
+* Allows switching between light and dark modes.
+* Uses `localStorage` to persist theme preference.
+
+
+### 4. RTL Toggle
+
+* Switches layout between LTR (default) and RTL (for Arabic/Hebrew support).
+
+![RTL Layout](src/assets/pic4.png)
+
+### 5. Framer Motion Animations
+
+* Smooth page entrance and hover effects on cards.
+
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/ZakiaHussaini/react-cards.git
+cd react-cards
+npm install
+npm start
+```
+
+---
+
+## Deployment
+
+You can deploy this app using services like **Vercel**, **Netlify**, or **GitHub Pages**.
+
+---
+
+## Customization
+
+* You can update the card data inside `CardGrid.js` or connect it to a real API.
+* Tailwind CSS classes can be customized to match your branding.
+* Component styling and animation can be enhanced further using tools like ShadCN, Radix UI, or Headless UI.
+
+---
+
+## Author
+
+**Zakia Hussaini**
+GitHub: [ZakiaHussaini](https://github.com/ZakiaHussaini)
+
+---
+
+## License
+
+This project is open-source and free to use under the MIT license.
