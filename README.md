@@ -76,29 +76,5 @@ npm install
 npm start
 ```
 
----
 
-## Deployment
 
-You can deploy this app using services like **Vercel**, **Netlify**, or **GitHub Pages**.
-
----
-
-## Customization
-
-* You can update the card data inside `CardGrid.js` or connect it to a real API.
-* Tailwind CSS classes can be customized to match your branding.
-* Component styling and animation can be enhanced further using tools like ShadCN, Radix UI, or Headless UI.
-
----
-
-## Author
-
-**Zakia Hussaini**
-GitHub: [ZakiaHussaini](https://github.com/ZakiaHussaini)
-
----
-
-## License
-
-This project is open-source and free to use under the MIT license.
